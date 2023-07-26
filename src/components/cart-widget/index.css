@@ -1,0 +1,19 @@
+#cartWidgetPlusCounter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#cartWidgetPlusCounter div img{
+    max-width: 40px;
+}
+
+#cartWidgetPlusCounter div span {
+    font-size: larger;
+    padding: 7px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: aquamarine;
+}

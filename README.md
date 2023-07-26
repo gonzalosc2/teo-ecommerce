@@ -1,8 +1,29 @@
-# Getting Started with Create React App
+# Teo's E-commerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El presente proyecto denominado "Teo's E-commerce" es una página de e-commerce de ventas de libros ficticios.
 
-## Available Scripts
+Todos los títulos, descripciones, precios y cantidades fueron generadas por medio de [ChatGPT](https://chat.openai.com/). En cuanto a las imágenes, estas son genéricas y extraídas desde Google Images.
+
+Este proyecto responde al requirimiento de proyecto final solicitado en el curso de ReactJS de [Coderhouse](https://www.coderhouse.cl/). El mismo se encuentra construido en React, mediante `create-react-app`.
+
+## Funcionalidades de la página
+
+- Agregar un ítem al carrito en base a la cantidad que se desee; sujeto a stock disponible.
+- Revisar detalle del producto y stock disponible para cada uno de los ítems desplegados en las distintas secciones.
+- Navegación a distintas páginas por medio de _Tabs Bar_, ícono de carrito, botón de búsqueda, además del botón de detalle. Lo mismo se puede realizar mediante URL, con la salvedad que si se ingresa una dirección incorrecta, será re-dirigido a la sección que corresponda según sea el caso.
+- Búsqueda de orden de pedido en base a _orderId_, en donde se despliega el detalle de lo ingresado al carrito, su valor total y datos de referencia (no personales): nombre, apellido, fecha de generación de compra. (Se omite correo electrónico y teléfono por ser datos personales)
+- Formulario de datos para individualización de comprador de la orden. Además de botón de cancelar compra en caso que no se desee seguir con el proceso (esto borra el carrito).
+- Toda sección que no podea un _Tabs Bar_ posee un botón de volver a: sección anterior o página de inicio.
+- Header con nombre del sitio redirecciona a la Home.
+
+## Paquetes usados
+
+- [Charka UI](https://chakra-ui.com/): Librería que presenta un entorno de UI que facilita el despliegue de tarjetas para los ítems como también los íconos y botones usados. Se usa como alternativa de [MaterialUI](https://mui.com/material-ui/) con el objeto de aprender una libería distinta.
+- [React Router](https://reactrouter.com/en/main): Librería para configurar la navegación/ruteo por el lado del cliente. Esta permite que la aplicación actualice la URL desde acciones, como un _click_ en un _link_ o botón sin tener que realizar otra petición a otro documento desde el servidor.
+- [Firebase](https://firebase.google.com/): Liberaría usada para como SDK. En particular se usa Firestore para el almacenamiento de la información a desplegar en la página, como para el registro de las órdenes de compra.
+- [React JS](https://react.dev/): Principal libería en la cual se encuentra construido el proyecto. Es mandatoria su uso en este proyecto para demostrar dominio de la misma.
+
+## Comandos necesarios para revisar y desplegar proyecto
 
 In the project directory, you can run:
 
@@ -14,11 +35,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -28,43 +44,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

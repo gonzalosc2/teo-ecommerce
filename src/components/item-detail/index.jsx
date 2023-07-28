@@ -23,7 +23,7 @@ const ItemDetail = ({ data, lastCategory }) => {
     addProductToCarrito({
       id: data?.id,
       title: data?.title,
-      pricePerUnit: data?.price,
+      price: data?.price,
       quantity: quantity,
       imageURL: data?.imageURL
     });
